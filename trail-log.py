@@ -14,7 +14,7 @@ trailType = IntVar()
 dayOrNight = IntVar()
 
 def enter_button():
-    with open('trail-log.csv', 'a') as f:
+    with open('/home/chris/Documents/Programs/Python-general/Trail-Log/trail-log.csv', 'a') as f:
         w = csv.writer(f,dialect='excel')
         w.writerow([trailName.get(), location.get(), date.get(), length.get(), trailType.get(), friend.get(), dayOrNight.get()])
         
