@@ -1,4 +1,4 @@
-#!/usr/bin/env python2
+
 
 from Tkinter import *
 import csv
@@ -10,14 +10,13 @@ import csv
 #and that calculate distance hiked in a month, year, and total since I've started hiking.
 #it could be cool if I could get data from map my hike in here for a dashboard-y report.
 
-wd = "/home/chris/Documents/Programs/Python-general/Trail-Log"
 master = Tk()
 master.wm_title("Trail Log")
 trailType = IntVar()
 dayOrNight = IntVar()
 
 def enter_button():
-    with open(wd+'trail-log.csv', 'a') as f:
+    with open('/home/chris/Documents/Programs/Python-general/Trail-Log/trail-log.csv', 'a') as f:
         w = csv.writer(f,dialect='excel')
         w.writerow([trailName.get(), location.get(), date.get(), length.get(), trailType.get(), friend.get(), dayOrNight.get()])
         
