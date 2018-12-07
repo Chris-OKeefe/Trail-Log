@@ -3,11 +3,11 @@ A simple GUI for entering data on hikes. Tkinter GUI adds data to a local csv fi
 
 ![Screenshot](/trail-log.py-screen-shot.png?raw=true "Trail Log Screenshot")
 
-##Skills
+## Skills
 * Created basic Tkinter interface
 * Inputs data to CSV file
 
-##To-do
+## To-do
 1. Add some validation for numeric and date fields.
 2. Write additional scripts that calculate total distance for each trail, and total distance by month, year, and to-date. 
 3. Use work from 2 to create an online dashboard.
